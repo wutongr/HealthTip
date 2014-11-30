@@ -32,8 +32,8 @@
 		D896931E1A2AD58500FF32D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D89693201A2AD58500FF32D1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D89693211A2AD58500FF32D1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D89693231A2AD58500FF32D1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D89693241A2AD58500FF32D1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D89693231A2AD58500FF32D1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../../ViewController.h; sourceTree = "<group>"; };
+		D89693241A2AD58500FF32D1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../../ViewController.m; sourceTree = "<group>"; };
 		D89693271A2AD58500FF32D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D89693291A2AD58500FF32D1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D896932C1A2AD58500FF32D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -81,14 +81,13 @@
 		D896931B1A2AD58500FF32D1 /* HealthTip */ = {
 			isa = PBXGroup;
 			children = (
+				D89693781A2ADD5700FF32D1 /* Classes */,
+				D89693771A2ADD4F00FF32D1 /* ThirdParty */,
+				D896931C1A2AD58500FF32D1 /* Supporting Files */,
+				D89693701A2ADD3C00FF32D1 /* Resource */,
 				D89693201A2AD58500FF32D1 /* AppDelegate.h */,
 				D89693211A2AD58500FF32D1 /* AppDelegate.m */,
-				D89693231A2AD58500FF32D1 /* ViewController.h */,
-				D89693241A2AD58500FF32D1 /* ViewController.m */,
-				D89693261A2AD58500FF32D1 /* Main.storyboard */,
 				D89693291A2AD58500FF32D1 /* Images.xcassets */,
-				D896932B1A2AD58500FF32D1 /* LaunchScreen.xib */,
-				D896931C1A2AD58500FF32D1 /* Supporting Files */,
 			);
 			path = HealthTip;
 			sourceTree = "<group>";
@@ -117,6 +116,167 @@
 				D89693371A2AD58500FF32D1 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D89693701A2ADD3C00FF32D1 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				D89693711A2ADD3C00FF32D1 /* Files */,
+				D89693731A2ADD3C00FF32D1 /* Images */,
+				D89693741A2ADD3C00FF32D1 /* Media */,
+				D89693751A2ADD3C00FF32D1 /* Xibs */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		D89693711A2ADD3C00FF32D1 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				D89693721A2ADD3C00FF32D1 /* Define */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		D89693721A2ADD3C00FF32D1 /* Define */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
+		D89693731A2ADD3C00FF32D1 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		D89693741A2ADD3C00FF32D1 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		D89693751A2ADD3C00FF32D1 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				D89693261A2AD58500FF32D1 /* Main.storyboard */,
+				D896932B1A2AD58500FF32D1 /* LaunchScreen.xib */,
+				D89693761A2ADD3C00FF32D1 /* CellXibs */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
+		D89693761A2ADD3C00FF32D1 /* CellXibs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CellXibs;
+			sourceTree = "<group>";
+		};
+		D89693771A2ADD4F00FF32D1 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		D89693781A2ADD5700FF32D1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D89693791A2ADD5700FF32D1 /* Extend */,
+				D896937B1A2ADD5700FF32D1 /* Roots */,
+				D896937C1A2ADD5700FF32D1 /* System */,
+				D89693821A2ADD5700FF32D1 /* UI */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D89693791A2ADD5700FF32D1 /* Extend */ = {
+			isa = PBXGroup;
+			children = (
+				D896937A1A2ADD5700FF32D1 /* Protocols */,
+			);
+			path = Extend;
+			sourceTree = "<group>";
+		};
+		D896937A1A2ADD5700FF32D1 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		D896937B1A2ADD5700FF32D1 /* Roots */ = {
+			isa = PBXGroup;
+			children = (
+				D89693231A2AD58500FF32D1 /* ViewController.h */,
+				D89693241A2AD58500FF32D1 /* ViewController.m */,
+			);
+			path = Roots;
+			sourceTree = "<group>";
+		};
+		D896937C1A2ADD5700FF32D1 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				D896937D1A2ADD5700FF32D1 /* Base */,
+				D896937E1A2ADD5700FF32D1 /* DB */,
+				D89693811A2ADD5700FF32D1 /* Network */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		D896937D1A2ADD5700FF32D1 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		D896937E1A2ADD5700FF32D1 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				D896937F1A2ADD5700FF32D1 /* Caches */,
+				D89693801A2ADD5700FF32D1 /* Models */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		D896937F1A2ADD5700FF32D1 /* Caches */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Caches;
+			sourceTree = "<group>";
+		};
+		D89693801A2ADD5700FF32D1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D89693811A2ADD5700FF32D1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D89693821A2ADD5700FF32D1 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D89693831A2ADD5700FF32D1 /* Tool */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		D89693831A2ADD5700FF32D1 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +410,7 @@
 				D89693271A2AD58500FF32D1 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		D896932B1A2AD58500FF32D1 /* LaunchScreen.xib */ = {
@@ -258,6 +419,7 @@
 				D896932C1A2AD58500FF32D1 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -412,6 +574,7 @@
 				D896933E1A2AD58500FF32D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D896933F1A2AD58500FF32D1 /* Build configuration list for PBXNativeTarget "HealthTipTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +583,7 @@
 				D89693411A2AD58500FF32D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
