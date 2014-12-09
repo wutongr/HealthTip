@@ -9,22 +9,18 @@
 /* Begin PBXBuildFile section */
 		D896931F1A2AD58500FF32D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D896931E1A2AD58500FF32D1 /* main.m */; };
 		D89693221A2AD58500FF32D1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D89693211A2AD58500FF32D1 /* AppDelegate.m */; };
-		D89693251A2AD58500FF32D1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D89693241A2AD58500FF32D1 /* ViewController.m */; };
 		D89693281A2AD58500FF32D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D89693261A2AD58500FF32D1 /* Main.storyboard */; };
 		D896932A1A2AD58500FF32D1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D89693291A2AD58500FF32D1 /* Images.xcassets */; };
 		D896932D1A2AD58500FF32D1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D896932B1A2AD58500FF32D1 /* LaunchScreen.xib */; };
-		D89693391A2AD58500FF32D1 /* HealthTipTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D89693381A2AD58500FF32D1 /* HealthTipTests.m */; };
+		D89693891A2AE7D300FF32D1 /* WTUIBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = D89693881A2AE7D300FF32D1 /* WTUIBoard.m */; };
+		D8AA69B41A3536CC00CA9B31 /* MainBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AA69B31A3536CC00CA9B31 /* MainBoard.m */; };
+		D8AA69B61A357A2100CA9B31 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8AA69B51A357A2100CA9B31 /* MapKit.framework */; };
+		D8AA69B81A357A3100CA9B31 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8AA69B71A357A3100CA9B31 /* HealthKit.framework */; };
+		D8AA69BA1A357A4600CA9B31 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8AA69B91A357A4600CA9B31 /* CoreData.framework */; };
+		D8AA69BC1A357A4D00CA9B31 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8AA69BB1A357A4D00CA9B31 /* CoreLocation.framework */; };
+		D8AA69BF1A35E67F00CA9B31 /* SettingBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AA69BE1A35E67F00CA9B31 /* SettingBoard.m */; };
+		D8AA69C21A35F3F300CA9B31 /* WTCircleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AA69C11A35F3F300CA9B31 /* WTCircleLayer.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		D89693331A2AD58500FF32D1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D89693111A2AD58500FF32D1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D89693181A2AD58500FF32D1;
-			remoteInfo = HealthTip;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		D89693191A2AD58500FF32D1 /* HealthTip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthTip.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,14 +28,22 @@
 		D896931E1A2AD58500FF32D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D89693201A2AD58500FF32D1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D89693211A2AD58500FF32D1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D89693231A2AD58500FF32D1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../../ViewController.h; sourceTree = "<group>"; };
-		D89693241A2AD58500FF32D1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../../ViewController.m; sourceTree = "<group>"; };
 		D89693271A2AD58500FF32D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D89693291A2AD58500FF32D1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D896932C1A2AD58500FF32D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		D89693321A2AD58500FF32D1 /* HealthTipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HealthTipTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D89693371A2AD58500FF32D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D89693381A2AD58500FF32D1 /* HealthTipTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HealthTipTests.m; sourceTree = "<group>"; };
+		D89693871A2AE7D300FF32D1 /* WTUIBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTUIBoard.h; sourceTree = "<group>"; };
+		D89693881A2AE7D300FF32D1 /* WTUIBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTUIBoard.m; sourceTree = "<group>"; };
+		D896938A1A2AE83B00FF32D1 /* HealthTip-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HealthTip-Prefix.pch"; sourceTree = "<group>"; };
+		D8AA69B21A3536CC00CA9B31 /* MainBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainBoard.h; sourceTree = "<group>"; };
+		D8AA69B31A3536CC00CA9B31 /* MainBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainBoard.m; sourceTree = "<group>"; };
+		D8AA69B51A357A2100CA9B31 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D8AA69B71A357A3100CA9B31 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		D8AA69B91A357A4600CA9B31 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D8AA69BB1A357A4D00CA9B31 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D8AA69BD1A35E67F00CA9B31 /* SettingBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingBoard.h; sourceTree = "<group>"; };
+		D8AA69BE1A35E67F00CA9B31 /* SettingBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingBoard.m; sourceTree = "<group>"; };
+		D8AA69C01A35F3F300CA9B31 /* WTCircleLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTCircleLayer.h; sourceTree = "<group>"; };
+		D8AA69C11A35F3F300CA9B31 /* WTCircleLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTCircleLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,13 +51,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D896932F1A2AD58500FF32D1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				D8AA69BC1A357A4D00CA9B31 /* CoreLocation.framework in Frameworks */,
+				D8AA69BA1A357A4600CA9B31 /* CoreData.framework in Frameworks */,
+				D8AA69B81A357A3100CA9B31 /* HealthKit.framework in Frameworks */,
+				D8AA69B61A357A2100CA9B31 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,8 +64,11 @@
 		D89693101A2AD58500FF32D1 = {
 			isa = PBXGroup;
 			children = (
+				D8AA69BB1A357A4D00CA9B31 /* CoreLocation.framework */,
+				D8AA69B91A357A4600CA9B31 /* CoreData.framework */,
+				D8AA69B71A357A3100CA9B31 /* HealthKit.framework */,
+				D8AA69B51A357A2100CA9B31 /* MapKit.framework */,
 				D896931B1A2AD58500FF32D1 /* HealthTip */,
-				D89693351A2AD58500FF32D1 /* HealthTipTests */,
 				D896931A1A2AD58500FF32D1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,7 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				D89693191A2AD58500FF32D1 /* HealthTip.app */,
-				D89693321A2AD58500FF32D1 /* HealthTipTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,23 +100,7 @@
 			children = (
 				D896931D1A2AD58500FF32D1 /* Info.plist */,
 				D896931E1A2AD58500FF32D1 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		D89693351A2AD58500FF32D1 /* HealthTipTests */ = {
-			isa = PBXGroup;
-			children = (
-				D89693381A2AD58500FF32D1 /* HealthTipTests.m */,
-				D89693361A2AD58500FF32D1 /* Supporting Files */,
-			);
-			path = HealthTipTests;
-			sourceTree = "<group>";
-		};
-		D89693361A2AD58500FF32D1 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				D89693371A2AD58500FF32D1 /* Info.plist */,
+				D896938A1A2AE83B00FF32D1 /* HealthTip-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -211,8 +198,8 @@
 		D896937B1A2ADD5700FF32D1 /* Roots */ = {
 			isa = PBXGroup;
 			children = (
-				D89693231A2AD58500FF32D1 /* ViewController.h */,
-				D89693241A2AD58500FF32D1 /* ViewController.m */,
+				D8AA69B21A3536CC00CA9B31 /* MainBoard.h */,
+				D8AA69B31A3536CC00CA9B31 /* MainBoard.m */,
 			);
 			path = Roots;
 			sourceTree = "<group>";
@@ -230,6 +217,8 @@
 		D896937D1A2ADD5700FF32D1 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				D89693871A2AE7D300FF32D1 /* WTUIBoard.h */,
+				D89693881A2AE7D300FF32D1 /* WTUIBoard.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -268,6 +257,8 @@
 			isa = PBXGroup;
 			children = (
 				D89693831A2ADD5700FF32D1 /* Tool */,
+				D8AA69BD1A35E67F00CA9B31 /* SettingBoard.h */,
+				D8AA69BE1A35E67F00CA9B31 /* SettingBoard.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -275,6 +266,8 @@
 		D89693831A2ADD5700FF32D1 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				D8AA69C01A35F3F300CA9B31 /* WTCircleLayer.h */,
+				D8AA69C11A35F3F300CA9B31 /* WTCircleLayer.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -299,24 +292,6 @@
 			productReference = D89693191A2AD58500FF32D1 /* HealthTip.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D89693311A2AD58500FF32D1 /* HealthTipTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D896933F1A2AD58500FF32D1 /* Build configuration list for PBXNativeTarget "HealthTipTests" */;
-			buildPhases = (
-				D896932E1A2AD58500FF32D1 /* Sources */,
-				D896932F1A2AD58500FF32D1 /* Frameworks */,
-				D89693301A2AD58500FF32D1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D89693341A2AD58500FF32D1 /* PBXTargetDependency */,
-			);
-			name = HealthTipTests;
-			productName = HealthTipTests;
-			productReference = D89693321A2AD58500FF32D1 /* HealthTipTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -328,10 +303,6 @@
 				TargetAttributes = {
 					D89693181A2AD58500FF32D1 = {
 						CreatedOnToolsVersion = 6.1;
-					};
-					D89693311A2AD58500FF32D1 = {
-						CreatedOnToolsVersion = 6.1;
-						TestTargetID = D89693181A2AD58500FF32D1;
 					};
 				};
 			};
@@ -349,7 +320,6 @@
 			projectRoot = "";
 			targets = (
 				D89693181A2AD58500FF32D1 /* HealthTip */,
-				D89693311A2AD58500FF32D1 /* HealthTipTests */,
 			);
 		};
 /* End PBXProject section */
@@ -365,13 +335,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D89693301A2AD58500FF32D1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -379,29 +342,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D89693251A2AD58500FF32D1 /* ViewController.m in Sources */,
 				D89693221A2AD58500FF32D1 /* AppDelegate.m in Sources */,
+				D8AA69B41A3536CC00CA9B31 /* MainBoard.m in Sources */,
 				D896931F1A2AD58500FF32D1 /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D896932E1A2AD58500FF32D1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D89693391A2AD58500FF32D1 /* HealthTipTests.m in Sources */,
+				D89693891A2AE7D300FF32D1 /* WTUIBoard.m in Sources */,
+				D8AA69BF1A35E67F00CA9B31 /* SettingBoard.m in Sources */,
+				D8AA69C21A35F3F300CA9B31 /* WTCircleLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D89693341A2AD58500FF32D1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D89693181A2AD58500FF32D1 /* HealthTip */;
-			targetProxy = D89693331A2AD58500FF32D1 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D89693261A2AD58500FF32D1 /* Main.storyboard */ = {
@@ -442,7 +392,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: 耀 丁 (P9E792V23Q)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: 耀 丁 (P9E792V23Q)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -462,6 +413,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "913009ed-6178-42c3-88bd-ff9e52ee607e";
+				"PROVISIONING_PROFILE[sdk=*]" = "913009ed-6178-42c3-88bd-ff9e52ee607e";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -483,7 +436,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: 耀 丁 (P9E792V23Q)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: 耀 丁 (P9E792V23Q)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -496,6 +450,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "913009ed-6178-42c3-88bd-ff9e52ee607e";
+				"PROVISIONING_PROFILE[sdk=*]" = "913009ed-6178-42c3-88bd-ff9e52ee607e";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -505,9 +461,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: 耀 丁 (P9E792V23Q)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: 耀 丁 (P9E792V23Q)";
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/HealthTip/HealthTip-Prefix.pch";
 				INFOPLIST_FILE = HealthTip/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=*]" = "913009ed-6178-42c3-88bd-ff9e52ee607e";
 			};
 			name = Debug;
 		};
@@ -515,43 +475,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: 耀 丁 (P9E792V23Q)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: 耀 丁 (P9E792V23Q)";
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/HealthTip/HealthTip-Prefix.pch";
 				INFOPLIST_FILE = HealthTip/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		D89693401A2AD58500FF32D1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = HealthTipTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HealthTip.app/HealthTip";
-			};
-			name = Debug;
-		};
-		D89693411A2AD58500FF32D1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = HealthTipTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HealthTip.app/HealthTip";
+				"PROVISIONING_PROFILE[sdk=*]" = "913009ed-6178-42c3-88bd-ff9e52ee607e";
 			};
 			name = Release;
 		};
@@ -572,15 +502,6 @@
 			buildConfigurations = (
 				D896933D1A2AD58500FF32D1 /* Debug */,
 				D896933E1A2AD58500FF32D1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D896933F1A2AD58500FF32D1 /* Build configuration list for PBXNativeTarget "HealthTipTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D89693401A2AD58500FF32D1 /* Debug */,
-				D89693411A2AD58500FF32D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

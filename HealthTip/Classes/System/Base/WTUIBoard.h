@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  WTUIBoard.h
 //  HealthTip
 //
 //  Created by Yorke on 14/11/30.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface WTUIBoard : UIViewController
 
 @end
-
