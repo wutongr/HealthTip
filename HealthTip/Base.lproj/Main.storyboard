@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
@@ -7,7 +7,7 @@
         <!--Main Board-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="MainBoard" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainBoard" id="vXZ-lx-hvc" customClass="MainBoard" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -26,7 +26,6 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="jbG-D3-iqL" secondAttribute="centerX" constant="-50" id="3zh-UR-uGq"/>
                             <constraint firstItem="jbG-D3-iqL" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="80" id="7WC-pQ-YAk"/>
@@ -38,28 +37,10 @@
             </objects>
             <point key="canvasLocation" x="280.5" y="337"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="xww-8b-Lfh">
-            <objects>
-                <viewController id="5bv-4T-7Qs" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Vy1-Mt-msN"/>
-                        <viewControllerLayoutGuide type="bottom" id="e6j-ig-47Z"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="L4g-5g-BBQ">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3Vb-bG-6Jp" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="982" y="375"/>
-        </scene>
         <!--Setting Board-->
         <scene sceneID="ajC-zf-1lw">
             <objects>
-                <viewController id="hSh-Z1-S6b" customClass="SettingBoard" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingBoard" id="hSh-Z1-S6b" customClass="SettingBoard" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QT2-k2-yWw"/>
                         <viewControllerLayoutGuide type="bottom" id="H6U-zm-FNB"/>

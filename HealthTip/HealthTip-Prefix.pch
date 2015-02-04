@@ -17,5 +17,6 @@
 #ifdef __OBJC__
 
 #import "WTUIBoard.h"
+#import <HealthKit/HealthKit.h>
 
 #endif

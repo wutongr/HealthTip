@@ -20,6 +20,9 @@
 		D8AA69BC1A357A4D00CA9B31 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8AA69BB1A357A4D00CA9B31 /* CoreLocation.framework */; };
 		D8AA69BF1A35E67F00CA9B31 /* SettingBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AA69BE1A35E67F00CA9B31 /* SettingBoard.m */; };
 		D8AA69C21A35F3F300CA9B31 /* WTCircleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AA69C11A35F3F300CA9B31 /* WTCircleLayer.m */; };
+		D8AA69C51A36ECDF00CA9B31 /* HealthTipModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D8AA69C31A36ECDF00CA9B31 /* HealthTipModel.xcdatamodeld */; };
+		D8AA69CA1A37E21F00CA9B31 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = D8AA69C91A37E21F00CA9B31 /* back.png */; };
+		D8AA69CD1A37E7EB00CA9B31 /* GlobalVariables.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AA69CC1A37E7EB00CA9B31 /* GlobalVariables.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,10 @@
 		D8AA69BE1A35E67F00CA9B31 /* SettingBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingBoard.m; sourceTree = "<group>"; };
 		D8AA69C01A35F3F300CA9B31 /* WTCircleLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTCircleLayer.h; sourceTree = "<group>"; };
 		D8AA69C11A35F3F300CA9B31 /* WTCircleLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTCircleLayer.m; sourceTree = "<group>"; };
+		D8AA69C41A36ECDF00CA9B31 /* HealthTipModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HealthTipModel.xcdatamodel; sourceTree = "<group>"; };
+		D8AA69C91A37E21F00CA9B31 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		D8AA69CB1A37E7EB00CA9B31 /* GlobalVariables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalVariables.h; sourceTree = "<group>"; };
+		D8AA69CC1A37E7EB00CA9B31 /* GlobalVariables.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalVariables.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,10 +71,7 @@
 		D89693101A2AD58500FF32D1 = {
 			isa = PBXGroup;
 			children = (
-				D8AA69BB1A357A4D00CA9B31 /* CoreLocation.framework */,
-				D8AA69B91A357A4600CA9B31 /* CoreData.framework */,
-				D8AA69B71A357A3100CA9B31 /* HealthKit.framework */,
-				D8AA69B51A357A2100CA9B31 /* MapKit.framework */,
+				D8AA69C61A36ED8800CA9B31 /* Frameworks */,
 				D896931B1A2AD58500FF32D1 /* HealthTip */,
 				D896931A1A2AD58500FF32D1 /* Products */,
 			);
@@ -134,6 +138,7 @@
 		D89693731A2ADD3C00FF32D1 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				D8AA69C91A37E21F00CA9B31 /* back.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -184,6 +189,8 @@
 			isa = PBXGroup;
 			children = (
 				D896937A1A2ADD5700FF32D1 /* Protocols */,
+				D8AA69CB1A37E7EB00CA9B31 /* GlobalVariables.h */,
+				D8AA69CC1A37E7EB00CA9B31 /* GlobalVariables.m */,
 			);
 			path = Extend;
 			sourceTree = "<group>";
@@ -242,6 +249,7 @@
 		D89693801A2ADD5700FF32D1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D8AA69C31A36ECDF00CA9B31 /* HealthTipModel.xcdatamodeld */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -270,6 +278,17 @@
 				D8AA69C11A35F3F300CA9B31 /* WTCircleLayer.m */,
 			);
 			path = Tool;
+			sourceTree = "<group>";
+		};
+		D8AA69C61A36ED8800CA9B31 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8AA69BB1A357A4D00CA9B31 /* CoreLocation.framework */,
+				D8AA69B91A357A4600CA9B31 /* CoreData.framework */,
+				D8AA69B71A357A3100CA9B31 /* HealthKit.framework */,
+				D8AA69B51A357A2100CA9B31 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,6 +348,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8AA69CA1A37E21F00CA9B31 /* back.png in Resources */,
 				D89693281A2AD58500FF32D1 /* Main.storyboard in Resources */,
 				D896932D1A2AD58500FF32D1 /* LaunchScreen.xib in Resources */,
 				D896932A1A2AD58500FF32D1 /* Images.xcassets in Resources */,
@@ -342,11 +362,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8AA69C51A36ECDF00CA9B31 /* HealthTipModel.xcdatamodeld in Sources */,
 				D89693221A2AD58500FF32D1 /* AppDelegate.m in Sources */,
 				D8AA69B41A3536CC00CA9B31 /* MainBoard.m in Sources */,
 				D896931F1A2AD58500FF32D1 /* main.m in Sources */,
 				D89693891A2AE7D300FF32D1 /* WTUIBoard.m in Sources */,
 				D8AA69BF1A35E67F00CA9B31 /* SettingBoard.m in Sources */,
+				D8AA69CD1A37E7EB00CA9B31 /* GlobalVariables.m in Sources */,
 				D8AA69C21A35F3F300CA9B31 /* WTCircleLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -465,9 +487,11 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: 耀 丁 (P9E792V23Q)";
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/HealthTip/HealthTip-Prefix.pch";
 				INFOPLIST_FILE = HealthTip/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				"PROVISIONING_PROFILE[sdk=*]" = "913009ed-6178-42c3-88bd-ff9e52ee607e";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -479,9 +503,11 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: 耀 丁 (P9E792V23Q)";
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/HealthTip/HealthTip-Prefix.pch";
 				INFOPLIST_FILE = HealthTip/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				"PROVISIONING_PROFILE[sdk=*]" = "913009ed-6178-42c3-88bd-ff9e52ee607e";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -507,6 +533,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D8AA69C31A36ECDF00CA9B31 /* HealthTipModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D8AA69C41A36ECDF00CA9B31 /* HealthTipModel.xcdatamodel */,
+			);
+			currentVersion = D8AA69C41A36ECDF00CA9B31 /* HealthTipModel.xcdatamodel */;
+			name = HealthTipModel.xcdatamodeld;
+			path = ../../../../../HealthTipModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D89693111A2AD58500FF32D1 /* Project object */;
 }

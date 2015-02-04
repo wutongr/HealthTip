@@ -34,14 +34,25 @@
     if(self = [super init]){
         self.bounds=CGRectMake(0, 0, 5 * r, 5 * r);
         
-        CABasicAnimation *shake = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
-        shake.fromValue = @0;
-        shake.toValue = @(2 * M_PI);
-        shake.repeatCount = INT64_MAX;
-        shake.duration = 5;
-        shake.autoreverses = NO;
-        [self addAnimation:shake forKey:@"shakeAnimation"];
+        [self addAnimation];
     }
     return self;
+}
+
+-(void)storeValue{
+    NSLog(@"%f",self.frame.origin.y);
+}
+
+-(void)addAnimation{
+    CABasicAnimation *shake = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
+    shake.fromValue = @0;
+    shake.toValue = @(2 * M_PI);
+    shake.repeatCount = INT64_MAX;
+    shake.duration = 5;
+
+    shake.removedOnCompletion = NO;
+    shake.fillMode = kCAFillModeBoth;
+    shake.autoreverses = NO;
+    [self addAnimation:shake forKey:@"shakeAnimation"];
 }
 @end
