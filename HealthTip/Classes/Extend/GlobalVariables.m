@@ -10,7 +10,7 @@
 
 @implementation GlobalVariables
 
-+(instancetype) locationManager{
++ (instancetype)locationManager{
     static GlobalVariables *instance;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -19,19 +19,19 @@
     return instance;
 }
 
--(void)startUpdatingLocation{
+- (void)startUpdatingLocation{
     
 }
 
--(void)stopUpdatingLocation{
+- (void)stopUpdatingLocation{
     
 }
 
--(void)startMonitorSignificantLocationChanges{
+- (void)startMonitorSignificantLocationChanges{
     
 }
 
--(void)stopMonitorSignificantLocationChanges{
+- (void)stopMonitorSignificantLocationChanges{
     
 }
 

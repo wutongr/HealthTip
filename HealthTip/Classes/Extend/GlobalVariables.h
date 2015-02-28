@@ -10,16 +10,15 @@
 
 @interface GlobalVariables : NSObject
 
-+(instancetype) locationManager;
++ (instancetype)locationManager;
 
+- (void)startUpdatingLocation;
 
--(void)startUpdatingLocation;
+- (void)stopUpdatingLocation;
 
--(void)stopUpdatingLocation;
+- (void)startMonitorSignificantLocationChanges;
 
--(void)startMonitorSignificantLocationChanges;
-
--(void)stopMonitorSignificantLocationChanges;
+- (void)stopMonitorSignificantLocationChanges;
 
 
 @end
