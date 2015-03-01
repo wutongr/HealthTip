@@ -7,7 +7,14 @@
 //
 
 #import "AppDelegate.h"
-#import <CoreLocation/CoreLocation.h>
+
+#import "WTNavigationBoard.h"
+
+#import "MainBoard.h"
+#import "LeftBoard.h"
+#import "RightBoard.h"
+#import "WTDrawerVisualStateManager.h"
+#import "GlobalVariables.h"
 
 @interface AppDelegate ()
 
@@ -17,8 +24,53 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+//    MainBoard *board = [[MainBoard alloc]init];
+//    
+    self.window.rootViewController = self.drawerController;
+    
+    [[WTCoreDataStack defaultStack]ensureInitialLoad];
+    
+    [self.window makeKeyAndVisible];
+    
     // Override point for customization after application launch.
     return YES;
+}
+
+- (MMDrawerController *)drawerController{
+    if(!_drawerController){
+        UIViewController *leftBoard = [[LeftBoard alloc]init];
+        UIViewController *mainBoard = [[MainBoard alloc]init];
+        UIViewController *rightBoard = [[RightBoard alloc]init];
+        UINavigationController *mainNav = [[WTNavigationBoard alloc]initWithRootViewController:mainBoard];
+        [mainNav setRestorationIdentifier:@"mainBoardKey"];
+        UINavigationController *leftNav = [[WTNavigationBoard alloc]initWithRootViewController:leftBoard];
+        [leftBoard setRestorationIdentifier:@"leftBoardKey"];
+        UINavigationController *rightNav = [[WTNavigationBoard alloc]initWithRootViewController:rightBoard];
+        [rightBoard setRestorationIdentifier:@"rightBoardKey"];
+        _drawerController = [[MMDrawerController alloc]
+                             initWithCenterViewController:mainNav
+                             leftDrawerViewController:leftNav
+                             rightDrawerViewController:rightNav];
+        [_drawerController setShowsShadow:NO];
+        [_drawerController setRestorationIdentifier:@"boardKey"];
+        [_drawerController setMaximumRightDrawerWidth:200.0f];
+        [_drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
+        [_drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
+        [_drawerController setRightDrawerViewController:nil];
+        [_drawerController setDrawerVisualStateBlock:^(MMDrawerController *drawerController, MMDrawerSide drawerSide, CGFloat percentVisible) {
+            MMDrawerControllerDrawerVisualStateBlock block;
+            block = [[WTDrawerVisualStateManager sharedManager] drawerVisualStateBlockForDrawerSide:drawerSide];
+            if(block){
+                block(drawerController,drawerSide,percentVisible);
+            }
+            
+        }];
+    }
+    
+    return _drawerController;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -30,7 +82,7 @@
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
     
-    if([CLLocationManager significantLocationChangeMonitoringAvailable]){
+    if([GlobalVariables significantLocationChangeMonitoringAvailable]){
         [[GlobalVariables locationManager] stopUpdatingLocation];
         [[GlobalVariables locationManager] startMonitorSignificantLocationChanges];
     }else{
@@ -44,7 +96,7 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-    if([CLLocationManager significantLocationChangeMonitoringAvailable]){
+    if([GlobalVariables significantLocationChangeMonitoringAvailable]){
         [[GlobalVariables locationManager] stopMonitorSignificantLocationChanges];
         [[GlobalVariables locationManager] startUpdatingLocation];
     }else{

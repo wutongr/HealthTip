@@ -7,6 +7,7 @@
 //
 
 #import "WTUIBoard.h"
+#import <MMDrawerController/MMDrawerBarButtonItem.h>
 
 @interface WTUIBoard ()
 
@@ -16,12 +17,35 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self initData];
+    
+    [self initView];
+    
     // Do any additional setup after loading the view.
+}
+
+- (void)setupLeftMenuButton{
+    MMDrawerBarButtonItem * leftDrawerButton = [[MMDrawerBarButtonItem alloc] initWithTarget:self action:@selector(leftDrawerButtonPress:)];
+    [self.navigationItem setLeftBarButtonItem:leftDrawerButton animated:YES];
+}
+
+- (void)leftDrawerButtonPress:(id)sender{
+    [self.mm_drawerController toggleDrawerSide:MMDrawerSideLeft animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)initData{
+    
+}
+
+- (void)initView{
+    self.view.backgroundColor = [UIColor whiteColor];
+    
 }
 
 /*

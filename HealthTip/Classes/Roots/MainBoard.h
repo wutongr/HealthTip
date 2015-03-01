@@ -8,6 +8,10 @@
 
 #import "WTUIBoard.h"
 
+@class MainViewModel;
+
 @interface MainBoard : WTUIBoard
+
+@property (nonatomic, strong) MainViewModel *viewModel;
 
 @end

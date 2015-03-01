@@ -7,11 +7,14 @@
 //
 
 #import "MainBoard.h"
-#import "WTCircleLayer.h"
+#import "MainViewModel.h"
+#import "WTMainCell.h"
 
-@interface MainBoard (){
-    WTCircleLayer *_layer;
+@interface MainBoard ()<UITableViewDataSource,UITableViewDelegate>{
+    
 }
+
+@property (nonatomic, strong) UITableView *tableView;
 
 @end
 
@@ -20,34 +23,66 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    WTCircleLayer *layer = [WTCircleLayer layer];
+    [self.navigationController setHidesBarsOnSwipe:YES];
+    [self.view addGestureRecognizer:self.navigationController.barHideOnSwipeGestureRecognizer];
     
-    layer.position=CGPointMake(100, 100);
-    
-    [layer setNeedsDisplay];
-    
-    [self.view.layer addSublayer:layer];
-    
-    _layer = layer;
-   
     // Do any additional setup after loading the view.
 }
 
-
--(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
-    
+- (void)initView{
+    [super initView];
+    self.title = @"MainBoard";
+    [self.view addSubview:self.tableView];
+    [self setupLeftMenuButton];
 }
 
--(void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event{
-    
+- (void)initData{
+    [super initData];
+    self.viewModel = [[MainViewModel alloc]init];
 }
 
--(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event{
-    
+- (UITableView *)tableView{
+    if(!_tableView){
+        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_SIZE.width, SCREEN_SIZE.height) style:UITableViewStylePlain];
+        _tableView.delegate = self;
+        _tableView.dataSource = self;
+    }
+    return _tableView;
 }
 
--(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return [self.viewModel numberOfSections];
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return [self.viewModel numberOfItemsInSection:section];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 200;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return 30;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+    return [self.viewModel titleForSection:section];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    static NSString *cellIdentifer = @"WTMainCell";
+    WTMainCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifer];
+    if(!cell){
+        cell = (WTMainCell *)[[[NSBundle mainBundle]loadNibNamed:@"WTMainCell" owner:self options:nil]lastObject];
+    }
     
+    [cell setContent:[self.viewModel titleAtIndexPath:indexPath]];
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
 }
 
 - (void)didReceiveMemoryWarning {

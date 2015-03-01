@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MMDrawerController/UIViewController+MMDrawerController.h>
 
 @interface WTUIBoard : UIViewController
+
+- (void)setupLeftMenuButton;
+
+- (void)initData;
+
+- (void)initView;
 
 @end

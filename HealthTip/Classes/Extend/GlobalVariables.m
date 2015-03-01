@@ -19,6 +19,10 @@
     return instance;
 }
 
++ (BOOL)significantLocationChangeMonitoringAvailable{
+    return [CLLocationManager significantLocationChangeMonitoringAvailable];
+}
+
 - (void)startUpdatingLocation{
     
 }

@@ -7,12 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "GlobalVariables.h"
+#import <MMDrawerController/MMDrawerController.h>
+
+#define APPDELEGATE (AppDelegate *)[UIApplication sharedApplication].delegate
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
+@property (nonatomic, strong) MMDrawerController *drawerController;
 
 @end
 

@@ -17,6 +17,11 @@
 #ifdef __OBJC__
 
 #import "WTUIBoard.h"
-#import <HealthKit/HealthKit.h>
+//#import <HealthKit/HealthKit.h>
+#import "Define.h"
+
+#import <CoreData/CoreData.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import "WTCoreDataStack.h"
 
 #endif
