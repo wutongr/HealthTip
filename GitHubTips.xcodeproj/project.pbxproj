@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		41B5C90655A64E786BB02002 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 380B46EFBA330388E30DE2AA /* libPods.a */; };
+		D842D1051AAC73EB00C92642 /* find@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D842D1041AAC73EB00C92642 /* find@2x.png */; };
+		D842D13F1AAC780900C92642 /* LoginUser.m in Sources */ = {isa = PBXBuildFile; fileRef = D842D13C1AAC780900C92642 /* LoginUser.m */; };
+		D842D1401AAC780900C92642 /* Plan.m in Sources */ = {isa = PBXBuildFile; fileRef = D842D13E1AAC780900C92642 /* Plan.m */; };
 		D85A7E9B1AA24AB400FD5342 /* WTViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D85A7E9A1AA24AB400FD5342 /* WTViewModel.m */; };
 		D88F189A1AA1E52500C1C34A /* WTNavigationBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = D88F18991AA1E52500C1C34A /* WTNavigationBoard.m */; };
 		D88F18A01AA1E56500C1C34A /* LeftBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = D88F189F1AA1E56500C1C34A /* LeftBoard.m */; };
@@ -26,7 +29,7 @@
 		D8AA69BC1A357A4D00CA9B31 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8AA69BB1A357A4D00CA9B31 /* CoreLocation.framework */; };
 		D8AA69BF1A35E67F00CA9B31 /* SettingBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AA69BE1A35E67F00CA9B31 /* SettingBoard.m */; };
 		D8AA69C21A35F3F300CA9B31 /* WTCircleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AA69C11A35F3F300CA9B31 /* WTCircleLayer.m */; };
-		D8AA69C51A36ECDF00CA9B31 /* HealthTip.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D8AA69C31A36ECDF00CA9B31 /* HealthTip.xcdatamodeld */; };
+		D8AA69C51A36ECDF00CA9B31 /* GitHubTips.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D8AA69C31A36ECDF00CA9B31 /* GitHubTips.xcdatamodeld */; };
 		D8AA69CA1A37E21F00CA9B31 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = D8AA69C91A37E21F00CA9B31 /* back.png */; };
 		D8AA69CD1A37E7EB00CA9B31 /* GlobalVariables.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AA69CC1A37E7EB00CA9B31 /* GlobalVariables.m */; };
 		D8DFF5461AA20A420095F34F /* UIViewController+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = D8DFF5451AA20A420095F34F /* UIViewController+Swizzle.m */; };
@@ -35,14 +38,17 @@
 		D8DFF5551AA2427D0095F34F /* WTMainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D8DFF5541AA2427D0095F34F /* WTMainCell.m */; };
 		D8DFF5571AA245520095F34F /* WTMainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8DFF5561AA245520095F34F /* WTMainCell.xib */; };
 		D8DFF55A1AA2AF8C0095F34F /* WTCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = D8DFF5591AA2AF8C0095F34F /* WTCoreDataStack.m */; };
-		D8DFF5631AA2B8E50095F34F /* LoginUser.m in Sources */ = {isa = PBXBuildFile; fileRef = D8DFF5621AA2B8E50095F34F /* LoginUser.m */; };
-		D8DFF5661AA2B8E60095F34F /* Plan.m in Sources */ = {isa = PBXBuildFile; fileRef = D8DFF5651AA2B8E60095F34F /* Plan.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		380B46EFBA330388E30DE2AA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C38BF68CF6AE4C11DC0E180 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A194923E4EE1822CA40BB739 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		D842D1041AAC73EB00C92642 /* find@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "find@2x.png"; sourceTree = "<group>"; };
+		D842D13B1AAC780900C92642 /* LoginUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginUser.h; path = GitHubTips/Classes/System/DB/Models/LoginUser.h; sourceTree = SOURCE_ROOT; };
+		D842D13C1AAC780900C92642 /* LoginUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginUser.m; path = GitHubTips/Classes/System/DB/Models/LoginUser.m; sourceTree = SOURCE_ROOT; };
+		D842D13D1AAC780900C92642 /* Plan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Plan.h; path = GitHubTips/Classes/System/DB/Models/Plan.h; sourceTree = SOURCE_ROOT; };
+		D842D13E1AAC780900C92642 /* Plan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Plan.m; path = GitHubTips/Classes/System/DB/Models/Plan.m; sourceTree = SOURCE_ROOT; };
 		D85A7E991AA24AB400FD5342 /* WTViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTViewModel.h; sourceTree = "<group>"; };
 		D85A7E9A1AA24AB400FD5342 /* WTViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTViewModel.m; sourceTree = "<group>"; };
 		D88F18981AA1E52500C1C34A /* WTNavigationBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTNavigationBoard.h; sourceTree = "<group>"; };
@@ -54,7 +60,7 @@
 		D88F18A41AA1E8C800C1C34A /* WTDrawerVisualStateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTDrawerVisualStateManager.h; sourceTree = "<group>"; };
 		D88F18A51AA1E8C800C1C34A /* WTDrawerVisualStateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTDrawerVisualStateManager.m; sourceTree = "<group>"; };
 		D88F18A71AA1E96400C1C34A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		D89693191A2AD58500FF32D1 /* HealthTip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthTip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D89693191A2AD58500FF32D1 /* GitHubTips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubTips.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D896931D1A2AD58500FF32D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D896931E1A2AD58500FF32D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D89693201A2AD58500FF32D1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -63,7 +69,7 @@
 		D896932C1A2AD58500FF32D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D89693871A2AE7D300FF32D1 /* WTUIBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTUIBoard.h; sourceTree = "<group>"; };
 		D89693881A2AE7D300FF32D1 /* WTUIBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTUIBoard.m; sourceTree = "<group>"; };
-		D896938A1A2AE83B00FF32D1 /* HealthTip-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HealthTip-Prefix.pch"; sourceTree = "<group>"; };
+		D896938A1A2AE83B00FF32D1 /* GitHubTips-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GitHubTips-Prefix.pch"; sourceTree = "<group>"; };
 		D8AA69B21A3536CC00CA9B31 /* MainBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainBoard.h; sourceTree = "<group>"; };
 		D8AA69B31A3536CC00CA9B31 /* MainBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainBoard.m; sourceTree = "<group>"; };
 		D8AA69B51A357A2100CA9B31 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -74,7 +80,7 @@
 		D8AA69BE1A35E67F00CA9B31 /* SettingBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingBoard.m; path = ../UI/SettingBoard.m; sourceTree = "<group>"; };
 		D8AA69C01A35F3F300CA9B31 /* WTCircleLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTCircleLayer.h; sourceTree = "<group>"; };
 		D8AA69C11A35F3F300CA9B31 /* WTCircleLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTCircleLayer.m; sourceTree = "<group>"; };
-		D8AA69C41A36ECDF00CA9B31 /* HealthTip.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HealthTip.xcdatamodel; sourceTree = "<group>"; };
+		D8AA69C41A36ECDF00CA9B31 /* GitHubTips.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GitHubTips.xcdatamodel; sourceTree = "<group>"; };
 		D8AA69C91A37E21F00CA9B31 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		D8AA69CB1A37E7EB00CA9B31 /* GlobalVariables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalVariables.h; sourceTree = "<group>"; };
 		D8AA69CC1A37E7EB00CA9B31 /* GlobalVariables.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalVariables.m; sourceTree = "<group>"; };
@@ -91,10 +97,6 @@
 		D8DFF5561AA245520095F34F /* WTMainCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTMainCell.xib; sourceTree = "<group>"; };
 		D8DFF5581AA2AF8C0095F34F /* WTCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTCoreDataStack.h; sourceTree = "<group>"; };
 		D8DFF5591AA2AF8C0095F34F /* WTCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTCoreDataStack.m; sourceTree = "<group>"; };
-		D8DFF5611AA2B8E50095F34F /* LoginUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginUser.h; path = HealthTip/Classes/System/DB/Models/LoginUser.h; sourceTree = SOURCE_ROOT; };
-		D8DFF5621AA2B8E50095F34F /* LoginUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginUser.m; path = HealthTip/Classes/System/DB/Models/LoginUser.m; sourceTree = SOURCE_ROOT; };
-		D8DFF5641AA2B8E60095F34F /* Plan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Plan.h; path = HealthTip/Classes/System/DB/Models/Plan.h; sourceTree = SOURCE_ROOT; };
-		D8DFF5651AA2B8E60095F34F /* Plan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Plan.m; path = HealthTip/Classes/System/DB/Models/Plan.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,7 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				D8AA69C61A36ED8800CA9B31 /* Frameworks */,
-				D896931B1A2AD58500FF32D1 /* HealthTip */,
+				D896931B1A2AD58500FF32D1 /* GitHubTips */,
 				D896931A1A2AD58500FF32D1 /* Products */,
 				CEBE76BF2E2AA8EBD2781B2E /* Pods */,
 			);
@@ -136,12 +138,12 @@
 		D896931A1A2AD58500FF32D1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D89693191A2AD58500FF32D1 /* HealthTip.app */,
+				D89693191A2AD58500FF32D1 /* GitHubTips.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D896931B1A2AD58500FF32D1 /* HealthTip */ = {
+		D896931B1A2AD58500FF32D1 /* GitHubTips */ = {
 			isa = PBXGroup;
 			children = (
 				D89693781A2ADD5700FF32D1 /* Classes */,
@@ -152,7 +154,7 @@
 				D89693211A2AD58500FF32D1 /* AppDelegate.m */,
 				D89693291A2AD58500FF32D1 /* Images.xcassets */,
 			);
-			path = HealthTip;
+			path = GitHubTips;
 			sourceTree = "<group>";
 		};
 		D896931C1A2AD58500FF32D1 /* Supporting Files */ = {
@@ -160,7 +162,7 @@
 			children = (
 				D896931D1A2AD58500FF32D1 /* Info.plist */,
 				D896931E1A2AD58500FF32D1 /* main.m */,
-				D896938A1A2AE83B00FF32D1 /* HealthTip-Prefix.pch */,
+				D896938A1A2AE83B00FF32D1 /* GitHubTips-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -195,6 +197,7 @@
 		D89693731A2ADD3C00FF32D1 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				D842D1041AAC73EB00C92642 /* find@2x.png */,
 				D8AA69C91A37E21F00CA9B31 /* back.png */,
 			);
 			path = Images;
@@ -317,10 +320,10 @@
 		D896937F1A2ADD5700FF32D1 /* Caches */ = {
 			isa = PBXGroup;
 			children = (
-				D8DFF5641AA2B8E60095F34F /* Plan.h */,
-				D8DFF5651AA2B8E60095F34F /* Plan.m */,
-				D8DFF5611AA2B8E50095F34F /* LoginUser.h */,
-				D8DFF5621AA2B8E50095F34F /* LoginUser.m */,
+				D842D13B1AAC780900C92642 /* LoginUser.h */,
+				D842D13C1AAC780900C92642 /* LoginUser.m */,
+				D842D13D1AAC780900C92642 /* Plan.h */,
+				D842D13E1AAC780900C92642 /* Plan.m */,
 			);
 			path = Caches;
 			sourceTree = "<group>";
@@ -328,7 +331,7 @@
 		D89693801A2ADD5700FF32D1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				D8AA69C31A36ECDF00CA9B31 /* HealthTip.xcdatamodeld */,
+				D8AA69C31A36ECDF00CA9B31 /* GitHubTips.xcdatamodeld */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -378,9 +381,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D89693181A2AD58500FF32D1 /* HealthTip */ = {
+		D89693181A2AD58500FF32D1 /* GitHubTips */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D896933C1A2AD58500FF32D1 /* Build configuration list for PBXNativeTarget "HealthTip" */;
+			buildConfigurationList = D896933C1A2AD58500FF32D1 /* Build configuration list for PBXNativeTarget "GitHubTips" */;
 			buildPhases = (
 				B3E22F54635B11934FAB9BB9 /* Check Pods Manifest.lock */,
 				D89693151A2AD58500FF32D1 /* Sources */,
@@ -392,9 +395,9 @@
 			);
 			dependencies = (
 			);
-			name = HealthTip;
+			name = GitHubTips;
 			productName = HealthTip;
-			productReference = D89693191A2AD58500FF32D1 /* HealthTip.app */;
+			productReference = D89693191A2AD58500FF32D1 /* GitHubTips.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -411,7 +414,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D89693141A2AD58500FF32D1 /* Build configuration list for PBXProject "HealthTip" */;
+			buildConfigurationList = D89693141A2AD58500FF32D1 /* Build configuration list for PBXProject "GitHubTips" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -424,7 +427,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D89693181A2AD58500FF32D1 /* HealthTip */,
+				D89693181A2AD58500FF32D1 /* GitHubTips */,
 			);
 		};
 /* End PBXProject section */
@@ -438,6 +441,7 @@
 				D896932D1A2AD58500FF32D1 /* LaunchScreen.xib in Resources */,
 				D896932A1A2AD58500FF32D1 /* Images.xcassets in Resources */,
 				D8DFF5571AA245520095F34F /* WTMainCell.xib in Resources */,
+				D842D1051AAC73EB00C92642 /* find@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,9 +485,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8DFF5661AA2B8E60095F34F /* Plan.m in Sources */,
+				D842D1401AAC780900C92642 /* Plan.m in Sources */,
 				D88F18A01AA1E56500C1C34A /* LeftBoard.m in Sources */,
-				D8AA69C51A36ECDF00CA9B31 /* HealthTip.xcdatamodeld in Sources */,
+				D8AA69C51A36ECDF00CA9B31 /* GitHubTips.xcdatamodeld in Sources */,
 				D8DFF55A1AA2AF8C0095F34F /* WTCoreDataStack.m in Sources */,
 				D89693221A2AD58500FF32D1 /* AppDelegate.m in Sources */,
 				D8AA69B41A3536CC00CA9B31 /* MainBoard.m in Sources */,
@@ -496,7 +500,7 @@
 				D88F189A1AA1E52500C1C34A /* WTNavigationBoard.m in Sources */,
 				D8AA69BF1A35E67F00CA9B31 /* SettingBoard.m in Sources */,
 				D8DFF54F1AA233A70095F34F /* MainViewModel.m in Sources */,
-				D8DFF5631AA2B8E50095F34F /* LoginUser.m in Sources */,
+				D842D13F1AAC780900C92642 /* LoginUser.m in Sources */,
 				D8DFF5461AA20A420095F34F /* UIViewController+Swizzle.m in Sources */,
 				D8AA69CD1A37E7EB00CA9B31 /* GlobalVariables.m in Sources */,
 				D88F18A61AA1E8C800C1C34A /* WTDrawerVisualStateManager.m in Sources */,
@@ -608,11 +612,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Chao Zhang (875RN2C89A)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Chao Zhang (875RN2C89A)";
-				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/HealthTip/HealthTip-Prefix.pch";
-				INFOPLIST_FILE = HealthTip/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/GitHubTips/GitHubTips-Prefix.pch";
+				INFOPLIST_FILE = GitHubTips/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = GitHubTips;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=*]" = "4ce90792-d972-4073-ab58-b168d833555b";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -626,11 +630,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Chao Zhang (875RN2C89A)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Chao Zhang (875RN2C89A)";
-				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/HealthTip/HealthTip-Prefix.pch";
-				INFOPLIST_FILE = HealthTip/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/GitHubTips/GitHubTips-Prefix.pch";
+				INFOPLIST_FILE = GitHubTips/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = GitHubTips;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=*]" = "4ce90792-d972-4073-ab58-b168d833555b";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -640,7 +644,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D89693141A2AD58500FF32D1 /* Build configuration list for PBXProject "HealthTip" */ = {
+		D89693141A2AD58500FF32D1 /* Build configuration list for PBXProject "GitHubTips" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D896933A1A2AD58500FF32D1 /* Debug */,
@@ -649,7 +653,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D896933C1A2AD58500FF32D1 /* Build configuration list for PBXNativeTarget "HealthTip" */ = {
+		D896933C1A2AD58500FF32D1 /* Build configuration list for PBXNativeTarget "GitHubTips" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D896933D1A2AD58500FF32D1 /* Debug */,
@@ -661,14 +665,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		D8AA69C31A36ECDF00CA9B31 /* HealthTip.xcdatamodeld */ = {
+		D8AA69C31A36ECDF00CA9B31 /* GitHubTips.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				D8AA69C41A36ECDF00CA9B31 /* HealthTip.xcdatamodel */,
+				D8AA69C41A36ECDF00CA9B31 /* GitHubTips.xcdatamodel */,
 			);
-			currentVersion = D8AA69C41A36ECDF00CA9B31 /* HealthTip.xcdatamodel */;
-			name = HealthTip.xcdatamodeld;
-			path = ../../../../../HealthTip.xcdatamodeld;
+			currentVersion = D8AA69C41A36ECDF00CA9B31 /* GitHubTips.xcdatamodel */;
+			name = GitHubTips.xcdatamodeld;
+			path = ../../../../../GitHubTips.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

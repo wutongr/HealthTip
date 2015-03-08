@@ -15,23 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D89693181A2AD58500FF32D1"
-               BuildableName = "HealthTip.app"
-               BlueprintName = "HealthTip"
-               ReferencedContainer = "container:HealthTip.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D89693311A2AD58500FF32D1"
-               BuildableName = "HealthTipTests.xctest"
-               BlueprintName = "HealthTipTests"
-               ReferencedContainer = "container:HealthTip.xcodeproj">
+               BuildableName = "GitHubTips.app"
+               BlueprintName = "GitHubTips"
+               ReferencedContainer = "container:GitHubTips.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -42,24 +28,14 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D89693311A2AD58500FF32D1"
-               BuildableName = "HealthTipTests.xctest"
-               BlueprintName = "HealthTipTests"
-               ReferencedContainer = "container:HealthTip.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D89693181A2AD58500FF32D1"
-            BuildableName = "HealthTip.app"
-            BlueprintName = "HealthTip"
-            ReferencedContainer = "container:HealthTip.xcodeproj">
+            BuildableName = "GitHubTips.app"
+            BlueprintName = "GitHubTips"
+            ReferencedContainer = "container:GitHubTips.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,9 +52,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D89693181A2AD58500FF32D1"
-            BuildableName = "HealthTip.app"
-            BlueprintName = "HealthTip"
-            ReferencedContainer = "container:HealthTip.xcodeproj">
+            BuildableName = "GitHubTips.app"
+            BlueprintName = "GitHubTips"
+            ReferencedContainer = "container:GitHubTips.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,9 +70,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D89693181A2AD58500FF32D1"
-            BuildableName = "HealthTip.app"
-            BlueprintName = "HealthTip"
-            ReferencedContainer = "container:HealthTip.xcodeproj">
+            BuildableName = "GitHubTips.app"
+            BlueprintName = "GitHubTips"
+            ReferencedContainer = "container:GitHubTips.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

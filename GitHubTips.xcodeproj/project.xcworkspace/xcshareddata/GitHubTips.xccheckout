@@ -5,16 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>C0AC6B2C-508B-4162-A6AA-AD51B4721099</string>
+	<string>9AA75D72-3FE1-4238-96AE-DEDA246CB1B1</string>
 	<key>IDESourceControlProjectName</key>
-	<string>HealthTip</string>
+	<string>GitHubTips</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>A1ACF0FF51940DE71C724773FECEB38595EF46F8</key>
 		<string>https://github.com/wutongr/HealthTip.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>HealthTip.xcodeproj</string>
+	<string>GitHubTips.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>A1ACF0FF51940DE71C724773FECEB38595EF46F8</key>
@@ -34,7 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>A1ACF0FF51940DE71C724773FECEB38595EF46F8</string>
 			<key>IDESourceControlWCCName</key>
-			<string>HealthTip</string>
+			<string>GitHubTips</string>
 		</dict>
 	</array>
 </dict>
