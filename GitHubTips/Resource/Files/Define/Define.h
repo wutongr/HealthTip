@@ -11,4 +11,7 @@
 
 #define SCREEN_SIZE [UIScreen mainScreen].bounds.size
 
+#define ClientID       @"a72cc60c5a0d4acb63bf"
+#define ClientSecret   @"5fc823b5bbc3b0d177c405b8cec8543050d534fa"
+
 #endif

@@ -7,8 +7,9 @@
 //
 
 #import "MainViewModel.h"
-#import "LoginUser.h"
-#import "Plan.h"
+#import "CommonUtils.h"
+#import "WTUser.h"
+#import "WTEntity.h"
 
 @interface MainViewModel ()<NSFetchedResultsControllerDelegate>
 
@@ -27,7 +28,6 @@
             @strongify(self);
             [self.fetchedResultsController performFetch:nil];
         }];
-
     }
     return self;
 }
@@ -44,46 +44,44 @@
 -(NSString *)titleForSection:(NSInteger)section{
     id<NSFetchedResultsSectionInfo> sectionInfo = [self.fetchedResultsController sections][section];
     NSArray *sectionObjects = [sectionInfo objects];
-    LoginUser *representativeObject = [sectionObjects firstObject];
+    WTUser *representativeObject = [sectionObjects firstObject];
 
-    return representativeObject.type;
+    return representativeObject.wtentity.company;
 }
 
 -(NSString *)titleAtIndexPath:(NSIndexPath *)indexPath{
-    LoginUser *user = [self userAtIndexPath:indexPath];
-    return [user valueForKey:@keypath(user,name)];
+    WTUser *user = [self userAtIndexPath:indexPath];
+    return [user valueForKey:@keypath(user,rawLogin)];
 }
 
 -(NSString *)subtitleAtIndexPath:(NSIndexPath *)indexPath{
-    LoginUser *user = [self userAtIndexPath:indexPath];
-    return [user valueForKey:@keypath(user,number)];
+    WTUser *user = [self userAtIndexPath:indexPath];
+    return [user valueForKey:@keypath(user,rawLogin)];
 }
 
--(LoginUser *)userAtIndexPath:(NSIndexPath *)indexPath{
-//    LoginUser *user = [self.fetchedResultsController objectAtIndexPath:indexPath];
+-(WTUser *)userAtIndexPath:(NSIndexPath *)indexPath{
     return [self.fetchedResultsController objectAtIndexPath:indexPath];
 }
 
 - (NSFetchedResultsController *)fetchedResultsController{
     if(!_fetchedResultsController){
-        
         NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-        NSEntityDescription *entity = [NSEntityDescription entityForName:@"LoginUser" inManagedObjectContext:[WTCoreDataStack defaultStack].managedObjectContext];
+        NSEntityDescription *entity = [NSEntityDescription entityForName:@"WTUser" inManagedObjectContext:[WTCoreDataStack defaultStack].managedObjectContext];
         [fetchRequest setEntity:entity];
         // Specify criteria for filtering which objects to fetch
-        NSNumber *uid = @10;
-        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"uid < %d", uid];
-        [fetchRequest setPredicate:predicate];
+//        NSNumber *uid = @10;
+//        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"uid < %d", uid];
+//        [fetchRequest setPredicate:predicate];
         // Specify how the fetched objects should be sorted
 //        NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"uid"
 //                                                                       ascending:YES];
         [fetchRequest setSortDescriptors:
-         [NSArray arrayWithObjects:[[NSSortDescriptor alloc] initWithKey:@"type" ascending:YES],
-                                   [[NSSortDescriptor alloc] initWithKey:@"uid" ascending:YES],nil]];
+         [NSArray arrayWithObjects:[[NSSortDescriptor alloc] initWithKey:@"rawLogin" ascending:YES],nil]];
         
         // Edit the section name key path and cache name if appropriate.
         // nil for section name key path means "no sections".
-        _fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:[WTCoreDataStack defaultStack].managedObjectContext sectionNameKeyPath:@"type" cacheName:@"Master"];
+        _fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:[WTCoreDataStack defaultStack].managedObjectContext sectionNameKeyPath:@"rawLogin" cacheName:@"Master"];
+        
         _fetchedResultsController.delegate = self;
         
         NSError *error = nil;

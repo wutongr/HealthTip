@@ -31,6 +31,13 @@
 	return [self modelWithDictionary:userDict error:NULL];
 }
 
++ (instancetype)userWithLogin:(NSString *)login {
+    NSMutableDictionary *userDict = [NSMutableDictionary dictionary];
+    if(login != nil) userDict[@keypath(OCTUser.new, login)] = login;
+    
+    return [self modelWithDictionary:userDict error:NULL];
+}
+
 #pragma mark MTLModel
 
 - (void)mergeRawLoginFromModel:(OCTUser *)model {

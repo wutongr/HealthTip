@@ -7,9 +7,13 @@
 //
 
 #import "WTCoreDataStack.h"
-
-#import "LoginUser.h"
-#import "Plan.h"
+#import "CommonUtils.h"
+#import "WTUser.h"
+#import "WTEntity.h"
+#import "WTObject.h"
+#import "WTServer.h"
+#import "WTPlan.h"
+#import "WTRepository.h"
 
 @interface WTCoreDataStack ()
 
@@ -45,6 +49,13 @@
         stack.persistentStoreCoordinator = persistentStoreCoordinator;
     });
     return stack;
+}
+
+- (instancetype)init{
+    if(self = [super init]){
+        _coredataQueue = dispatch_queue_create("com.wt.coredata", NULL);
+    }
+    return self;
 }
 
 - (void)saveContext{
@@ -121,67 +132,109 @@
     if(hasInitialLoad == NO){
         [userDefaults setBool:YES forKey:initialLoadKey];
         {
-            LoginUser *userA = [NSEntityDescription insertNewObjectForEntityForName:@"LoginUser" inManagedObjectContext:[[WTCoreDataStack defaultStack] managedObjectContext]];
-            userA.uid = @1;
-            userA.name = @"张一";
-            userA.type = @"学生";
-            userA.number = @20150301;
-            
-            Plan *planA = [NSEntityDescription insertNewObjectForEntityForName:@"Plan" inManagedObjectContext:[[WTCoreDataStack defaultStack] managedObjectContext]];
-            planA.user = userA;
-            planA.date = [NSDate date];
-            planA.content = @"张一今天去玩";
-            
-            Plan *planB = [NSEntityDescription insertNewObjectForEntityForName:@"Plan" inManagedObjectContext:[[WTCoreDataStack defaultStack] managedObjectContext]];
-            planB.user = userA;
-            planB.date = [NSDate dateWithTimeIntervalSinceNow:60 * 60 * 24];
-            planB.content = @"张一明天去吃";
-            
-            userA.plans = [NSOrderedSet orderedSetWithArray:@[planA,planB]];
+            RACSignal *request = [[CommonUtils client] fetchUserInfo];
+            [request subscribeNext:^(OCTUser *user) {
+                [WTCoreDataStack saveOCTUsers:@[user]];
+            } error:^(NSError *error) {
+                NSLog(@"%ld",[error code]);
+            } completed:^{
+                NSLog(@"completed");
+            }];
         }
-        
-        {
-            LoginUser *userB = [NSEntityDescription insertNewObjectForEntityForName:@"LoginUser" inManagedObjectContext:[[WTCoreDataStack defaultStack] managedObjectContext]];
-            userB.uid = @2;
-            userB.name = @"张二";
-            userB.type = @"老板";
-            userB.number = @20150302;
-            
-            Plan *planC = [NSEntityDescription insertNewObjectForEntityForName:@"Plan" inManagedObjectContext:[[WTCoreDataStack defaultStack] managedObjectContext]];
-            planC.user = userB;
-            planC.date = [NSDate date];
-            planC.content = @"张二今天去玩";
-            
-            Plan *planD = [NSEntityDescription insertNewObjectForEntityForName:@"Plan" inManagedObjectContext:[[WTCoreDataStack defaultStack] managedObjectContext]];
-            planD.user = userB;
-            planD.date = [NSDate dateWithTimeIntervalSinceNow:60 * 60 * 24];
-            planD.content = @"张二明天去吃";
-            
-            userB.plans = [NSOrderedSet orderedSetWithArray:@[planC,planD]];
-        }
-        
-        {
-            LoginUser *userC = [NSEntityDescription insertNewObjectForEntityForName:@"LoginUser" inManagedObjectContext:[[WTCoreDataStack defaultStack] managedObjectContext]];
-            userC.uid = @3;
-            userC.name = @"张三";
-            userC.type = @"学生";
-            userC.number = @20150303;
-            
-            Plan *planE = [NSEntityDescription insertNewObjectForEntityForName:@"Plan" inManagedObjectContext:[[WTCoreDataStack defaultStack] managedObjectContext]];
-            planE.user = userC;
-            planE.date = [NSDate date];
-            planE.content = @"张三今天去玩";
-            
-            Plan *planF = [NSEntityDescription insertNewObjectForEntityForName:@"Plan" inManagedObjectContext:[[WTCoreDataStack defaultStack] managedObjectContext]];
-            planF.user = userC;
-            planF.date = [NSDate dateWithTimeIntervalSinceNow:60 * 60 * 24];
-            planF.content = @"张三明天去吃";
-            
-            userC.plans = [NSOrderedSet orderedSetWithArray:@[planE,planF]];
-        }
-        
-        [[WTCoreDataStack defaultStack]saveContext];
     }
 }
+
++ (void)saveOCTUsers:(NSArray *)currentUsers{
+    //判断数据库中是否存在，存在则修改，不存在则新增
+    for(OCTUser *user in currentUsers){
+        [[WTCoreDataStack defaultStack] saveOCTUser:user];
+    }
+}
+
++ (void)deleteOCTUsers:(NSArray *)currentUsers{
+    for(OCTUser *user in currentUsers){
+        
+    }
+}
+
++ (OCTUser *)selectOCTUser:(NSString *)login{
+    return nil;
+}
+
+- (void)saveOCTUser:(OCTUser *)currentUser{
+    dispatch_async(_coredataQueue, ^{
+        WTUser *user = [NSEntityDescription insertNewObjectForEntityForName:@"WTUser" inManagedObjectContext:[[WTCoreDataStack defaultStack] managedObjectContext]];
+        user.rawLogin = currentUser.login;
+        
+        user.wtentity = ({
+            WTEntity *entity = [NSEntityDescription insertNewObjectForEntityForName:@"WTEntity" inManagedObjectContext:[[WTCoreDataStack defaultStack] managedObjectContext]];
+            entity.wtuser = user;
+            entity.avatarURL = [currentUser.avatarURL absoluteString];
+            entity.bio = currentUser.bio;
+            entity.blog = currentUser.blog;
+            entity.collaborators = @(currentUser.collaborators);
+            entity.company = currentUser.company;
+            entity.diskUsage = @(currentUser.diskUsage);
+            entity.email = currentUser.email;
+            entity.followers = @(currentUser.followers);
+            entity.following = @(currentUser.following);
+            entity.location = currentUser.location;
+            entity.login = currentUser.login;
+            entity.name = currentUser.name;
+            
+            entity.wtobject = ({
+                WTObject *object = [NSEntityDescription insertNewObjectForEntityForName:@"WTObject" inManagedObjectContext:[[WTCoreDataStack defaultStack] managedObjectContext]];
+                object.wtentity = entity;
+                object.uid = currentUser.objectID;
+                
+                object.wtserver = ({
+                    WTServer *objectServer = [NSEntityDescription insertNewObjectForEntityForName:@"WTServer" inManagedObjectContext:[[WTCoreDataStack defaultStack] managedObjectContext]];
+                    objectServer.wtobject = object;
+                    objectServer.baseURL = [currentUser.server.baseURL absoluteString];
+                    objectServer;
+                });
+                
+                object;
+            });
+            
+            entity.wtplan = ({
+                WTPlan *plan = [NSEntityDescription insertNewObjectForEntityForName:@"WTPlan" inManagedObjectContext:[[WTCoreDataStack defaultStack]managedObjectContext]];
+                plan.wtentity = entity;
+                plan.collaborators = @(currentUser.plan.collaborators);
+                plan.name = currentUser.plan.name;
+                plan.privateRepos = @(currentUser.plan.privateRepos);
+                plan.space = @(currentUser.plan.space);
+                
+                plan.wtobject = ({
+                    WTObject *planObject = [NSEntityDescription insertNewObjectForEntityForName:@"WTObject" inManagedObjectContext:[[WTCoreDataStack defaultStack] managedObjectContext]];
+                    planObject.wtplan = plan;
+                    planObject.uid = currentUser.plan.objectID;
+                    planObject.wtserver = ({
+                        WTServer *planObjectServer = [NSEntityDescription insertNewObjectForEntityForName:@"WTServer" inManagedObjectContext:[[WTCoreDataStack defaultStack] managedObjectContext]];
+                        planObjectServer.wtobject = planObject;
+                        planObjectServer.baseURL = [currentUser.plan.server.baseURL absoluteString];
+                        planObjectServer;
+                    });
+                    
+                    planObject;
+                });
+                
+                plan;
+            });
+            
+            entity.privateGistCount = @(currentUser.privateGistCount);
+            entity.privateRepoCount = @(currentUser.privateRepoCount);
+            entity.publicGistCount = @(currentUser.publicGistCount);
+            entity.publicRepoCount = @(currentUser.publicRepoCount);
+            
+            entity.wtrepositories = [NSSet set];
+            entity;
+        });
+        
+        [[WTCoreDataStack defaultStack]saveContext];
+    });
+    
+}
+
 
 @end

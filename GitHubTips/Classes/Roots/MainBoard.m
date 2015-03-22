@@ -26,7 +26,20 @@
     [self.navigationController setHidesBarsOnSwipe:YES];
     [self.view addGestureRecognizer:self.navigationController.barHideOnSwipeGestureRecognizer];
     
+    @weakify(self);
+    [self.viewModel.updatedContentSignal subscribeNext:^(id x) {
+        @strongify(self);
+        dispatch_sync(dispatch_get_main_queue(), ^{
+            [self.tableView reloadData];
+        });
+    }];
     // Do any additional setup after loading the view.
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+    self.viewModel.active = YES;
 }
 
 - (void)initView{

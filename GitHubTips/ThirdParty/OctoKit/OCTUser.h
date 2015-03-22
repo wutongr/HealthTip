@@ -29,4 +29,7 @@
 // Returns a user with the given username and OCTServer instance.
 + (instancetype)userWithRawLogin:(NSString *)rawLogin server:(OCTServer *)server;
 
+// Returns a user with the given username.(unauthenticated)
++ (instancetype)userWithLogin:(NSString *)login;
+
 @end

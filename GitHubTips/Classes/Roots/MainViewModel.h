@@ -10,7 +10,10 @@
 
 @interface MainViewModel : WTViewModel
 
-@property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
+@property (nonatomic, strong) NSFetchedResultsController *fetchedResultsController;
+@property (nonatomic, strong) NSArray *repositories;
+
+@property (nonatomic, readonly) RACSubject *updatedContentSignal;
 
 -(NSInteger)numberOfSections;
 -(NSInteger)numberOfItemsInSection:(NSInteger)section;

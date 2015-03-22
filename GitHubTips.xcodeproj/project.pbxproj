@@ -9,9 +9,6 @@
 /* Begin PBXBuildFile section */
 		41B5C90655A64E786BB02002 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 380B46EFBA330388E30DE2AA /* libPods.a */; };
 		D842D1051AAC73EB00C92642 /* find@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D842D1041AAC73EB00C92642 /* find@2x.png */; };
-		D842D13F1AAC780900C92642 /* LoginUser.m in Sources */ = {isa = PBXBuildFile; fileRef = D842D13C1AAC780900C92642 /* LoginUser.m */; };
-		D842D1401AAC780900C92642 /* Plan.m in Sources */ = {isa = PBXBuildFile; fileRef = D842D13E1AAC780900C92642 /* Plan.m */; };
-		D842D3A31AAC8BF800C92642 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D842D3201AAC8BF800C92642 /* Info.plist */; };
 		D842D3A41AAC8BF800C92642 /* NSDateFormatter+OCTFormattingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D842D3221AAC8BF800C92642 /* NSDateFormatter+OCTFormattingAdditions.m */; };
 		D842D3A51AAC8BF800C92642 /* NSURL+OCTQueryAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D842D3241AAC8BF800C92642 /* NSURL+OCTQueryAdditions.m */; };
 		D842D3A61AAC8BF800C92642 /* NSValueTransformer+OCTPredefinedTransformerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D842D3261AAC8BF800C92642 /* NSValueTransformer+OCTPredefinedTransformerAdditions.m */; };
@@ -75,6 +72,8 @@
 		D842D3E01AAC8BF800C92642 /* OCTWatchEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = D842D3A01AAC8BF800C92642 /* OCTWatchEvent.m */; };
 		D842D3E11AAC8BF800C92642 /* RACSignal+OCTClientAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D842D3A21AAC8BF800C92642 /* RACSignal+OCTClientAdditions.m */; };
 		D85A7E9B1AA24AB400FD5342 /* WTViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D85A7E9A1AA24AB400FD5342 /* WTViewModel.m */; };
+		D87615EF1AB356F300E10C9B /* CommonUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = D87615EE1AB356F300E10C9B /* CommonUtils.m */; };
+		D87615F21AB3F6B100E10C9B /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = D87615F11AB3F6B100E10C9B /* KeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D88F189A1AA1E52500C1C34A /* WTNavigationBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = D88F18991AA1E52500C1C34A /* WTNavigationBoard.m */; };
 		D88F18A01AA1E56500C1C34A /* LeftBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = D88F189F1AA1E56500C1C34A /* LeftBoard.m */; };
 		D88F18A31AA1E57800C1C34A /* RightBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = D88F18A21AA1E57800C1C34A /* RightBoard.m */; };
@@ -85,6 +84,14 @@
 		D896932A1A2AD58500FF32D1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D89693291A2AD58500FF32D1 /* Images.xcassets */; };
 		D896932D1A2AD58500FF32D1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D896932B1A2AD58500FF32D1 /* LaunchScreen.xib */; };
 		D89693891A2AE7D300FF32D1 /* WTUIBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = D89693881A2AE7D300FF32D1 /* WTUIBoard.m */; };
+		D89F2F2F1AB55EEF00702D49 /* GitHubTips.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D89F2F2D1AB55EEF00702D49 /* GitHubTips.xcdatamodeld */; };
+		D89F2F441AB560A700702D49 /* WTRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = D89F2F431AB560A700702D49 /* WTRepository.m */; };
+		D89F2F471AB560A800702D49 /* WTServer.m in Sources */ = {isa = PBXBuildFile; fileRef = D89F2F461AB560A800702D49 /* WTServer.m */; };
+		D89F2F4A1AB560A800702D49 /* WTUser.m in Sources */ = {isa = PBXBuildFile; fileRef = D89F2F491AB560A800702D49 /* WTUser.m */; };
+		D89F2F4D1AB560A800702D49 /* WTPlan.m in Sources */ = {isa = PBXBuildFile; fileRef = D89F2F4C1AB560A800702D49 /* WTPlan.m */; };
+		D89F2F501AB560A800702D49 /* WTEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = D89F2F4F1AB560A800702D49 /* WTEntity.m */; };
+		D89F2F531AB560A800702D49 /* WTObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D89F2F521AB560A800702D49 /* WTObject.m */; };
+		D89F2F5F1ABC158000702D49 /* WTUserUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = D89F2F5E1ABC158000702D49 /* WTUserUtils.m */; };
 		D8AA69B41A3536CC00CA9B31 /* MainBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AA69B31A3536CC00CA9B31 /* MainBoard.m */; };
 		D8AA69B61A357A2100CA9B31 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8AA69B51A357A2100CA9B31 /* MapKit.framework */; };
 		D8AA69B81A357A3100CA9B31 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8AA69B71A357A3100CA9B31 /* HealthKit.framework */; };
@@ -92,7 +99,6 @@
 		D8AA69BC1A357A4D00CA9B31 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8AA69BB1A357A4D00CA9B31 /* CoreLocation.framework */; };
 		D8AA69BF1A35E67F00CA9B31 /* SettingBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AA69BE1A35E67F00CA9B31 /* SettingBoard.m */; };
 		D8AA69C21A35F3F300CA9B31 /* WTCircleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AA69C11A35F3F300CA9B31 /* WTCircleLayer.m */; };
-		D8AA69C51A36ECDF00CA9B31 /* GitHubTips.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D8AA69C31A36ECDF00CA9B31 /* GitHubTips.xcdatamodeld */; };
 		D8AA69CA1A37E21F00CA9B31 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = D8AA69C91A37E21F00CA9B31 /* back.png */; };
 		D8AA69CD1A37E7EB00CA9B31 /* GlobalVariables.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AA69CC1A37E7EB00CA9B31 /* GlobalVariables.m */; };
 		D8B199701AAC8D5500F998CD /* ISO8601DateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = D8B1996D1AAC8D5500F998CD /* ISO8601DateFormatter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -110,6 +116,8 @@
 		D8B199A31AAC8D6700F998CD /* NSObject+MTLComparisonAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D8B199911AAC8D6700F998CD /* NSObject+MTLComparisonAdditions.m */; };
 		D8B199A41AAC8D6700F998CD /* NSValueTransformer+MTLInversionAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D8B199931AAC8D6700F998CD /* NSValueTransformer+MTLInversionAdditions.m */; };
 		D8B199A51AAC8D6700F998CD /* NSValueTransformer+MTLPredefinedTransformerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D8B199951AAC8D6700F998CD /* NSValueTransformer+MTLPredefinedTransformerAdditions.m */; };
+		D8B199AA1AAC9B5C00F998CD /* LoginBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = D8B199A81AAC9B5C00F998CD /* LoginBoard.m */; };
+		D8B199AB1AAC9B5C00F998CD /* LoginBoard.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8B199A91AAC9B5C00F998CD /* LoginBoard.xib */; };
 		D8DFF5461AA20A420095F34F /* UIViewController+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = D8DFF5451AA20A420095F34F /* UIViewController+Swizzle.m */; };
 		D8DFF5491AA20AEC0095F34F /* ObjcRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = D8DFF5481AA20AEC0095F34F /* ObjcRuntime.m */; };
 		D8DFF54F1AA233A70095F34F /* MainViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D8DFF54E1AA233A70095F34F /* MainViewModel.m */; };
@@ -123,11 +131,6 @@
 		4C38BF68CF6AE4C11DC0E180 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A194923E4EE1822CA40BB739 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D842D1041AAC73EB00C92642 /* find@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "find@2x.png"; sourceTree = "<group>"; };
-		D842D13B1AAC780900C92642 /* LoginUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginUser.h; path = GitHubTips/Classes/System/DB/Models/LoginUser.h; sourceTree = SOURCE_ROOT; };
-		D842D13C1AAC780900C92642 /* LoginUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginUser.m; path = GitHubTips/Classes/System/DB/Models/LoginUser.m; sourceTree = SOURCE_ROOT; };
-		D842D13D1AAC780900C92642 /* Plan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Plan.h; path = GitHubTips/Classes/System/DB/Models/Plan.h; sourceTree = SOURCE_ROOT; };
-		D842D13E1AAC780900C92642 /* Plan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Plan.m; path = GitHubTips/Classes/System/DB/Models/Plan.m; sourceTree = SOURCE_ROOT; };
-		D842D3201AAC8BF800C92642 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D842D3211AAC8BF800C92642 /* NSDateFormatter+OCTFormattingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+OCTFormattingAdditions.h"; sourceTree = "<group>"; };
 		D842D3221AAC8BF800C92642 /* NSDateFormatter+OCTFormattingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+OCTFormattingAdditions.m"; sourceTree = "<group>"; };
 		D842D3231AAC8BF800C92642 /* NSURL+OCTQueryAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+OCTQueryAdditions.h"; sourceTree = "<group>"; };
@@ -260,6 +263,10 @@
 		D842D3A21AAC8BF800C92642 /* RACSignal+OCTClientAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACSignal+OCTClientAdditions.m"; sourceTree = "<group>"; };
 		D85A7E991AA24AB400FD5342 /* WTViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTViewModel.h; sourceTree = "<group>"; };
 		D85A7E9A1AA24AB400FD5342 /* WTViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTViewModel.m; sourceTree = "<group>"; };
+		D87615ED1AB356F300E10C9B /* CommonUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonUtils.h; sourceTree = "<group>"; };
+		D87615EE1AB356F300E10C9B /* CommonUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonUtils.m; sourceTree = "<group>"; };
+		D87615F01AB3F6B100E10C9B /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
+		D87615F11AB3F6B100E10C9B /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
 		D88F18981AA1E52500C1C34A /* WTNavigationBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTNavigationBoard.h; sourceTree = "<group>"; };
 		D88F18991AA1E52500C1C34A /* WTNavigationBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTNavigationBoard.m; sourceTree = "<group>"; };
 		D88F189E1AA1E56500C1C34A /* LeftBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LeftBoard.h; path = ../System/Base/LeftBoard.h; sourceTree = "<group>"; };
@@ -279,6 +286,21 @@
 		D89693871A2AE7D300FF32D1 /* WTUIBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTUIBoard.h; sourceTree = "<group>"; };
 		D89693881A2AE7D300FF32D1 /* WTUIBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTUIBoard.m; sourceTree = "<group>"; };
 		D896938A1A2AE83B00FF32D1 /* GitHubTips-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GitHubTips-Prefix.pch"; sourceTree = "<group>"; };
+		D89F2F2E1AB55EEF00702D49 /* GitHubTips.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GitHubTips.xcdatamodel; sourceTree = "<group>"; };
+		D89F2F421AB560A700702D49 /* WTRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WTRepository.h; path = GitHubTips/Classes/System/DB/WTRepository.h; sourceTree = SOURCE_ROOT; };
+		D89F2F431AB560A700702D49 /* WTRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WTRepository.m; path = GitHubTips/Classes/System/DB/WTRepository.m; sourceTree = SOURCE_ROOT; };
+		D89F2F451AB560A800702D49 /* WTServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WTServer.h; path = GitHubTips/Classes/System/DB/WTServer.h; sourceTree = SOURCE_ROOT; };
+		D89F2F461AB560A800702D49 /* WTServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WTServer.m; path = GitHubTips/Classes/System/DB/WTServer.m; sourceTree = SOURCE_ROOT; };
+		D89F2F481AB560A800702D49 /* WTUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WTUser.h; path = GitHubTips/Classes/System/DB/WTUser.h; sourceTree = SOURCE_ROOT; };
+		D89F2F491AB560A800702D49 /* WTUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WTUser.m; path = GitHubTips/Classes/System/DB/WTUser.m; sourceTree = SOURCE_ROOT; };
+		D89F2F4B1AB560A800702D49 /* WTPlan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WTPlan.h; path = GitHubTips/Classes/System/DB/WTPlan.h; sourceTree = SOURCE_ROOT; };
+		D89F2F4C1AB560A800702D49 /* WTPlan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WTPlan.m; path = GitHubTips/Classes/System/DB/WTPlan.m; sourceTree = SOURCE_ROOT; };
+		D89F2F4E1AB560A800702D49 /* WTEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WTEntity.h; path = GitHubTips/Classes/System/DB/WTEntity.h; sourceTree = SOURCE_ROOT; };
+		D89F2F4F1AB560A800702D49 /* WTEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WTEntity.m; path = GitHubTips/Classes/System/DB/WTEntity.m; sourceTree = SOURCE_ROOT; };
+		D89F2F511AB560A800702D49 /* WTObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WTObject.h; path = GitHubTips/Classes/System/DB/WTObject.h; sourceTree = SOURCE_ROOT; };
+		D89F2F521AB560A800702D49 /* WTObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WTObject.m; path = GitHubTips/Classes/System/DB/WTObject.m; sourceTree = SOURCE_ROOT; };
+		D89F2F5D1ABC158000702D49 /* WTUserUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTUserUtils.h; sourceTree = SOURCE_ROOT; };
+		D89F2F5E1ABC158000702D49 /* WTUserUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTUserUtils.m; sourceTree = SOURCE_ROOT; };
 		D8AA69B21A3536CC00CA9B31 /* MainBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainBoard.h; sourceTree = "<group>"; };
 		D8AA69B31A3536CC00CA9B31 /* MainBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainBoard.m; sourceTree = "<group>"; };
 		D8AA69B51A357A2100CA9B31 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -289,7 +311,6 @@
 		D8AA69BE1A35E67F00CA9B31 /* SettingBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingBoard.m; path = ../UI/SettingBoard.m; sourceTree = "<group>"; };
 		D8AA69C01A35F3F300CA9B31 /* WTCircleLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTCircleLayer.h; sourceTree = "<group>"; };
 		D8AA69C11A35F3F300CA9B31 /* WTCircleLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTCircleLayer.m; sourceTree = "<group>"; };
-		D8AA69C41A36ECDF00CA9B31 /* GitHubTips.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GitHubTips.xcdatamodel; sourceTree = "<group>"; };
 		D8AA69C91A37E21F00CA9B31 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		D8AA69CB1A37E7EB00CA9B31 /* GlobalVariables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalVariables.h; sourceTree = "<group>"; };
 		D8AA69CC1A37E7EB00CA9B31 /* GlobalVariables.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalVariables.m; sourceTree = "<group>"; };
@@ -326,6 +347,9 @@
 		D8B199931AAC8D6700F998CD /* NSValueTransformer+MTLInversionAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSValueTransformer+MTLInversionAdditions.m"; sourceTree = "<group>"; };
 		D8B199941AAC8D6700F998CD /* NSValueTransformer+MTLPredefinedTransformerAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValueTransformer+MTLPredefinedTransformerAdditions.h"; sourceTree = "<group>"; };
 		D8B199951AAC8D6700F998CD /* NSValueTransformer+MTLPredefinedTransformerAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSValueTransformer+MTLPredefinedTransformerAdditions.m"; sourceTree = "<group>"; };
+		D8B199A71AAC9B5C00F998CD /* LoginBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginBoard.h; sourceTree = "<group>"; };
+		D8B199A81AAC9B5C00F998CD /* LoginBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginBoard.m; sourceTree = "<group>"; };
+		D8B199A91AAC9B5C00F998CD /* LoginBoard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginBoard.xib; sourceTree = "<group>"; };
 		D8DFF5441AA20A420095F34F /* UIViewController+Swizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Swizzle.h"; sourceTree = "<group>"; };
 		D8DFF5451AA20A420095F34F /* UIViewController+Swizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Swizzle.m"; sourceTree = "<group>"; };
 		D8DFF5471AA20AEC0095F34F /* ObjcRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjcRuntime.h; sourceTree = "<group>"; };
@@ -370,7 +394,6 @@
 		D842D31F1AAC8BF800C92642 /* OctoKit */ = {
 			isa = PBXGroup;
 			children = (
-				D842D3201AAC8BF800C92642 /* Info.plist */,
 				D842D3211AAC8BF800C92642 /* NSDateFormatter+OCTFormattingAdditions.h */,
 				D842D3221AAC8BF800C92642 /* NSDateFormatter+OCTFormattingAdditions.m */,
 				D842D3231AAC8BF800C92642 /* NSURL+OCTQueryAdditions.h */,
@@ -609,6 +632,8 @@
 		D89693771A2ADD4F00FF32D1 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				D87615F01AB3F6B100E10C9B /* KeychainItemWrapper.h */,
+				D87615F11AB3F6B100E10C9B /* KeychainItemWrapper.m */,
 				D8B199731AAC8D6700F998CD /* Mantle */,
 				D8B1996B1AAC8D5500F998CD /* ISO8601DateFormatter */,
 				D842D31F1AAC8BF800C92642 /* OctoKit */,
@@ -637,6 +662,8 @@
 				D8DFF5451AA20A420095F34F /* UIViewController+Swizzle.m */,
 				D8DFF5471AA20AEC0095F34F /* ObjcRuntime.h */,
 				D8DFF5481AA20AEC0095F34F /* ObjcRuntime.m */,
+				D87615ED1AB356F300E10C9B /* CommonUtils.h */,
+				D87615EE1AB356F300E10C9B /* CommonUtils.m */,
 			);
 			path = Extend;
 			sourceTree = "<group>";
@@ -703,10 +730,8 @@
 		D896937F1A2ADD5700FF32D1 /* Caches */ = {
 			isa = PBXGroup;
 			children = (
-				D842D13B1AAC780900C92642 /* LoginUser.h */,
-				D842D13C1AAC780900C92642 /* LoginUser.m */,
-				D842D13D1AAC780900C92642 /* Plan.h */,
-				D842D13E1AAC780900C92642 /* Plan.m */,
+				D89F2F5D1ABC158000702D49 /* WTUserUtils.h */,
+				D89F2F5E1ABC158000702D49 /* WTUserUtils.m */,
 			);
 			path = Caches;
 			sourceTree = "<group>";
@@ -714,7 +739,19 @@
 		D89693801A2ADD5700FF32D1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				D8AA69C31A36ECDF00CA9B31 /* GitHubTips.xcdatamodeld */,
+				D89F2F2D1AB55EEF00702D49 /* GitHubTips.xcdatamodeld */,
+				D89F2F511AB560A800702D49 /* WTObject.h */,
+				D89F2F521AB560A800702D49 /* WTObject.m */,
+				D89F2F4E1AB560A800702D49 /* WTEntity.h */,
+				D89F2F4F1AB560A800702D49 /* WTEntity.m */,
+				D89F2F4B1AB560A800702D49 /* WTPlan.h */,
+				D89F2F4C1AB560A800702D49 /* WTPlan.m */,
+				D89F2F481AB560A800702D49 /* WTUser.h */,
+				D89F2F491AB560A800702D49 /* WTUser.m */,
+				D89F2F451AB560A800702D49 /* WTServer.h */,
+				D89F2F461AB560A800702D49 /* WTServer.m */,
+				D89F2F421AB560A700702D49 /* WTRepository.h */,
+				D89F2F431AB560A700702D49 /* WTRepository.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -732,6 +769,9 @@
 			isa = PBXGroup;
 			children = (
 				D89693831A2ADD5700FF32D1 /* Tool */,
+				D8B199A71AAC9B5C00F998CD /* LoginBoard.h */,
+				D8B199A81AAC9B5C00F998CD /* LoginBoard.m */,
+				D8B199A91AAC9B5C00F998CD /* LoginBoard.xib */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -883,9 +923,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8B199AB1AAC9B5C00F998CD /* LoginBoard.xib in Resources */,
 				D8AA69CA1A37E21F00CA9B31 /* back.png in Resources */,
 				D896932D1A2AD58500FF32D1 /* LaunchScreen.xib in Resources */,
-				D842D3A31AAC8BF800C92642 /* Info.plist in Resources */,
 				D896932A1A2AD58500FF32D1 /* Images.xcassets in Resources */,
 				D8DFF5571AA245520095F34F /* WTMainCell.xib in Resources */,
 				D842D1051AAC73EB00C92642 /* find@2x.png in Resources */,
@@ -932,7 +972,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D842D1401AAC780900C92642 /* Plan.m in Sources */,
 				D88F18A01AA1E56500C1C34A /* LeftBoard.m in Sources */,
 				D842D3B91AAC8BF800C92642 /* OCTContent.m in Sources */,
 				D842D3BF1AAC8BF800C92642 /* OCTForkEvent.m in Sources */,
@@ -943,7 +982,6 @@
 				D842D3B81AAC8BF800C92642 /* OCTCommitTreeEntry.m in Sources */,
 				D842D3BD1AAC8BF800C92642 /* OCTEvent.m in Sources */,
 				D842D3C01AAC8BF800C92642 /* OCTGist.m in Sources */,
-				D8AA69C51A36ECDF00CA9B31 /* GitHubTips.xcdatamodeld in Sources */,
 				D842D3C91AAC8BF800C92642 /* OCTNotification.m in Sources */,
 				D8B1999C1AAC8D6700F998CD /* MTLModel+NSCoding.m in Sources */,
 				D842D3DD1AAC8BF800C92642 /* OCTTree.m in Sources */,
@@ -952,6 +990,7 @@
 				D8B199A51AAC8D6700F998CD /* NSValueTransformer+MTLPredefinedTransformerAdditions.m in Sources */,
 				D842D3C21AAC8BF800C92642 /* OCTGitCommit.m in Sources */,
 				D8B199A41AAC8D6700F998CD /* NSValueTransformer+MTLInversionAdditions.m in Sources */,
+				D89F2F2F1AB55EEF00702D49 /* GitHubTips.xcdatamodeld in Sources */,
 				D842D3C41AAC8BF800C92642 /* OCTIssue.m in Sources */,
 				D842D3C31AAC8BF800C92642 /* OCTGitCommitFile.m in Sources */,
 				D8B199991AAC8D6700F998CD /* EXTScope.m in Sources */,
@@ -959,10 +998,14 @@
 				D842D3C81AAC8BF800C92642 /* OCTMemberEvent.m in Sources */,
 				D842D3DB1AAC8BF800C92642 /* OCTSymlinkContent.m in Sources */,
 				D8B199701AAC8D5500F998CD /* ISO8601DateFormatter.m in Sources */,
+				D89F2F5F1ABC158000702D49 /* WTUserUtils.m in Sources */,
 				D8B199A21AAC8D6700F998CD /* NSError+MTLModelException.m in Sources */,
+				D89F2F441AB560A700702D49 /* WTRepository.m in Sources */,
+				D87615F21AB3F6B100E10C9B /* KeychainItemWrapper.m in Sources */,
 				D842D3DC1AAC8BF800C92642 /* OCTTeam.m in Sources */,
 				D8DFF55A1AA2AF8C0095F34F /* WTCoreDataStack.m in Sources */,
 				D842D3D51AAC8BF800C92642 /* OCTRefEvent.m in Sources */,
+				D87615EF1AB356F300E10C9B /* CommonUtils.m in Sources */,
 				D8B199A11AAC8D6700F998CD /* NSDictionary+MTLManipulationAdditions.m in Sources */,
 				D842D3A51AAC8BF800C92642 /* NSURL+OCTQueryAdditions.m in Sources */,
 				D8B1999F1AAC8D6700F998CD /* MTLValueTransformer.m in Sources */,
@@ -973,6 +1016,7 @@
 				D842D3CF1AAC8BF800C92642 /* OCTPullRequest.m in Sources */,
 				D8B199981AAC8D6700F998CD /* EXTRuntimeExtensions.m in Sources */,
 				D896931F1A2AD58500FF32D1 /* main.m in Sources */,
+				D89F2F4D1AB560A800702D49 /* WTPlan.m in Sources */,
 				D842D3D11AAC8BF800C92642 /* OCTPullRequestCommentEvent.m in Sources */,
 				D842D3C71AAC8BF800C92642 /* OCTIssueEvent.m in Sources */,
 				D842D3D71AAC8BF800C92642 /* OCTResponse.m in Sources */,
@@ -982,6 +1026,7 @@
 				D842D3CA1AAC8BF800C92642 /* OCTObject.m in Sources */,
 				D842D3D91AAC8BF800C92642 /* OCTServerMetadata.m in Sources */,
 				D85A7E9B1AA24AB400FD5342 /* WTViewModel.m in Sources */,
+				D89F2F501AB560A800702D49 /* WTEntity.m in Sources */,
 				D842D3BC1AAC8BF800C92642 /* OCTEntity.m in Sources */,
 				D842D3DA1AAC8BF800C92642 /* OCTSubmoduleContent.m in Sources */,
 				D842D3D41AAC8BF800C92642 /* OCTRef.m in Sources */,
@@ -991,17 +1036,21 @@
 				D842D3E01AAC8BF800C92642 /* OCTWatchEvent.m in Sources */,
 				D842D3A71AAC8BF800C92642 /* OCTAccessToken.m in Sources */,
 				D842D3D81AAC8BF800C92642 /* OCTServer.m in Sources */,
+				D89F2F531AB560A800702D49 /* WTObject.m in Sources */,
 				D89693891A2AE7D300FF32D1 /* WTUIBoard.m in Sources */,
 				D88F189A1AA1E52500C1C34A /* WTNavigationBoard.m in Sources */,
 				D8AA69BF1A35E67F00CA9B31 /* SettingBoard.m in Sources */,
+				D8B199AA1AAC9B5C00F998CD /* LoginBoard.m in Sources */,
 				D842D3AB1AAC8BF800C92642 /* OCTClient+Activity.m in Sources */,
 				D8B1999E1AAC8D6700F998CD /* MTLReflection.m in Sources */,
 				D842D3A91AAC8BF800C92642 /* OCTBlobTreeEntry.m in Sources */,
 				D842D3C11AAC8BF800C92642 /* OCTGistFile.m in Sources */,
 				D842D3D61AAC8BF800C92642 /* OCTRepository.m in Sources */,
 				D842D3A41AAC8BF800C92642 /* NSDateFormatter+OCTFormattingAdditions.m in Sources */,
+				D89F2F471AB560A800702D49 /* WTServer.m in Sources */,
 				D842D3CB1AAC8BF800C92642 /* OCTOrganization.m in Sources */,
 				D842D3B01AAC8BF800C92642 /* OCTClient+Notifications.m in Sources */,
+				D89F2F4A1AB560A800702D49 /* WTUser.m in Sources */,
 				D842D3E11AAC8BF800C92642 /* RACSignal+OCTClientAdditions.m in Sources */,
 				D8B1999B1AAC8D6700F998CD /* MTLManagedObjectAdapter.m in Sources */,
 				D842D3B21AAC8BF800C92642 /* OCTClient+Repositories.m in Sources */,
@@ -1010,7 +1059,6 @@
 				D842D3B51AAC8BF800C92642 /* OCTCommit.m in Sources */,
 				D842D3B41AAC8BF800C92642 /* OCTClient.m in Sources */,
 				D8B199A31AAC8D6700F998CD /* NSObject+MTLComparisonAdditions.m in Sources */,
-				D842D13F1AAC780900C92642 /* LoginUser.m in Sources */,
 				D842D3AF1AAC8BF800C92642 /* OCTClient+Keys.m in Sources */,
 				D842D3B61AAC8BF800C92642 /* OCTCommitComment.m in Sources */,
 				D842D3B71AAC8BF800C92642 /* OCTCommitCommentEvent.m in Sources */,
@@ -1189,14 +1237,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		D8AA69C31A36ECDF00CA9B31 /* GitHubTips.xcdatamodeld */ = {
+		D89F2F2D1AB55EEF00702D49 /* GitHubTips.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				D8AA69C41A36ECDF00CA9B31 /* GitHubTips.xcdatamodel */,
+				D89F2F2E1AB55EEF00702D49 /* GitHubTips.xcdatamodel */,
 			);
-			currentVersion = D8AA69C41A36ECDF00CA9B31 /* GitHubTips.xcdatamodel */;
+			currentVersion = D89F2F2E1AB55EEF00702D49 /* GitHubTips.xcdatamodel */;
 			name = GitHubTips.xcdatamodeld;
-			path = ../../../../../GitHubTips.xcdatamodeld;
+			path = ../GitHubTips.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

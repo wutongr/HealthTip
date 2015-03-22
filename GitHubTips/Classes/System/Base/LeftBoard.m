@@ -7,8 +7,10 @@
 //
 
 #import "LeftBoard.h"
+#import "CommonUtils.h"
+#import "WTUserUtils.h"
 
-@interface LeftBoard ()
+@interface LeftBoard ()<UITableViewDataSource,UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
 
@@ -28,6 +30,7 @@
     [super initView];
     self.view.backgroundColor = [UIColor lightGrayColor];
     self.title = @"LeftBoard";
+    [self.view addSubview:self.tableView];
 }
 
 - (void)initData{
@@ -36,6 +39,9 @@
 
 - (UITableView *)tableView{
     if(!_tableView){
+        _tableView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStylePlain];
+        _tableView.delegate = self;
+        _tableView.dataSource = self;
         
     }
     return _tableView;
@@ -43,9 +49,55 @@
 
 - (NSArray *)tableData{
     if(!_tableData){
-        _tableData = @[@"",@""];
+        _tableData = @[@"首次登录",@"用户信息",@"关注列表",@"粉丝列表"];
     }
     return _tableData;
+}
+
+#pragma mark - tableView delegate
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return self.tableData.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    static NSString * cellIndentifier = @"tableViewCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIndentifier];
+    if(!cell){
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIndentifier];
+    }
+    
+    cell.textLabel.text = self.tableData[indexPath.row];
+    
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    switch (indexPath.row) {
+        case 0:
+        {
+            [CommonUtils signInToServerUsingWebBrowserCompletion:nil failure:nil];
+        }
+            break;
+        case 1:
+        {
+            [WTUserUtils fetchUserInfo];
+        }
+            break;
+            case 2:
+        {
+            [WTUserUtils fetchFollowing];
+        }
+            break;
+            case 3:
+        {
+            [WTUserUtils fetchFollowers];
+        }
+            break;
+        default:
+            break;
+    }
 }
 
 - (void)didReceiveMemoryWarning {
